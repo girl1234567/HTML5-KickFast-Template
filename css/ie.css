@@ -1,0 +1,32 @@
+.opacity {
+	filter: alpha(opacity=40); /* IE6+ */
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40); /* IE6+ */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=40)"; /* this works in IE8 only */
+}
+
+.border-radius {
+	border-radius: 15px;
+	behavior: url(border-radius.htc);
+}
+
+.box-shadow {
+	filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=145, Strength=3);
+}
+
+.gradient {
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#81a8cb', endColorstr='#4477a1'); /* IE6 & IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#81a8cb', endColorstr='#4477a1')"; /* IE8 */
+}
+
+.background {
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#886287a7', endColorstr='#886287a7');
+}
+
+.multi-backgrounds {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='images/bg-image-2.gif', sizingMethod='crop'); /* IE6-8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/bg-image-2.gif', sizingMethod='crop')"; /* IE8 only */
+}
+
+.rotate {
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
